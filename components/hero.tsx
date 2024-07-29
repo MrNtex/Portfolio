@@ -4,38 +4,59 @@ import { TextGenerateEffect } from './ui/TextGenerateEffect'
 import MagicButton from './ui/MagicButton'
 import { FaLocationArrow } from 'react-icons/fa'
 import { TechStack } from './TechStack'
+import { FaLocationPin, FaMapLocationDot } from 'react-icons/fa6'
+import { BackgroundGradientAnimation } from './ui/GradientBg'
+import { Toggle } from "@/components/ui/toggle"
+import { ModeToggle } from './ui/DarkModeToggle'
 const hero = () => {
   return (
-    <div className="pb-20 pt-36">
+    <div>
         <div>
             <Spotlight className="-top-40 -left-10 md:-left-32 md:-top-20 h-screen" fill="white"/>
-            <Spotlight className="-top-10 -left-full h-[80vh] w-[50vw]" fill="purple"/>
+            <Spotlight className="-top-10 -right-10 h-[80vh] w-[20vw]" fill="purple"/>
             <Spotlight className="-top-28 -left-80 h-[80vh] w-[50vw]" fill="blue"/>
         </div>
 
-        <div className="flex-justfy-center relative my-20 z-10">
-            <div className='max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center'>
-            
-                <h2 className='uppercase tracking-widest text-xs text-center text-blue-100 max-w-80'>
-                    Dynamic Web Magic with Next.js
-                </h2>
-
-                <TextGenerateEffect words='Build your next project with Artur Niemiec' className='text-[40px] md:text-5xl lg:text-6xl font-bold max-w-[800px] text-center mt-4'/>
-
-                <p className='text-center text-lg mt-4'>
-                    Next.js is a React framework that enables server-side rendering and generating static websites for React based web applications. It is a powerful tool that is used by developers to create dynamic web applications.
-                </p>
-
-                <a href='#about' className='pt-10'> 
-                    <MagicButton
-                    title='My work'
-                    icon={<FaLocationArrow/>}
-                    position='right'
-                    />
-                </a>
-                
+        <div className='top-0 right-0 pointer-events-auto'>
+            <div className='absolute z-20 m-6'>
+                <ModeToggle/>
             </div>
+            
         </div>
+        <BackgroundGradientAnimation>
+            
+            <div className="absolute pointer-events-none my-10 z-10 inset-0 flex items-center justify-center min-h-screen">
+                
+                
+                <div className='max-w-[89vw] md:max-w-2xl lg:max-w-[65vw] flex flex-col items-center justify-center'>
+                    <TextGenerateEffect words='Build your next project with Artur Niemiec' className='text-[40px] md:text-5xl lg:text-6xl font-bold max-w-[800px] text-center mt-4'/>
+
+                    <div className='flex gap-5'>
+                        <FaMapLocationDot/>
+                        <h2 className='uppercase tracking-widest text-xs text-blue-100 max-w-80'>
+                            Cracov, Poland
+                        </h2>
+                    </div>
+                    
+
+                    <p className='text-center text-lg mt-4 pt-3'>
+                        Next.js is a React framework that enables server-side rendering and generating static websites for React based web applications. It is a powerful tool that is used by developers to create dynamic web applications.
+                    </p>
+
+                    <a href='#about' className='pt-10 pointer-events-auto'> 
+                        <MagicButton
+                        title='My work'
+                        icon={<FaLocationArrow/>}
+                        position='right'
+                        />
+                    </a>
+                    
+                </div>
+
+            </div>
+        </BackgroundGradientAnimation>
+        
+
         <TechStack/>
         
     </div>
