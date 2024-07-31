@@ -5,9 +5,9 @@ import { LinkPreview } from "@/components/ui/link-preview";
 
 export function Teaching() {
   return (
-    <div className="flex justify-center items-center h-[40rem] flex-col px-4">
-      <p className="text-neutral-500 dark:text-neutral-400 text-xl md:text-3xl max-w-3xl mx-auto mb-10">
-        I run a youtube chanell called{" "}
+    <div className="flex justify-center items-center h-[40rem] flex-col px-4 text-center">
+      <p className="text-neutral-500 dark:text-neutral-400 text-xl md:text-3xl max-w-4xl mx-auto mb-10">
+        In my free time I run a youtube chanell called{" "}
         <LinkPreview url="https://www.youtube.com/channel/UCZrepsiS3gGsb1ObK1e8CeA" className="font-bold">
           CodeForge
         </LinkPreview>{" "}

@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/provider";
+import { Toaster } from "@/components/ui/toaster"
+import { FloatingNav } from "@/components/ui/FloatingNav";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,7 +24,9 @@ export default function RootLayout({
             defaultTheme="dark"
             enableSystem
             disableTransitionOnChange
-          >{children}</ThemeProvider></body>
+          >
+            <Toaster/>
+            <FloatingNav navItems={[{name: 'Projects', link: '/'}, {name: 'About me', link: '/about-me'}, {name:'Resume', link: 'CV-1.pdf'}]}/>{children}</ThemeProvider></body>
     </html>
   );
 }

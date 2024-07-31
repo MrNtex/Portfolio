@@ -1,23 +1,25 @@
 
-import Contact from "@/components/Contact";
+import { Footer } from "@/components/Footer";
 import Grid from "@/components/Grid";
 import Hero from "@/components/hero";
 import { Teaching } from "@/components/Teaching";
 import { TechStack } from "@/components/TechStack";
 import { FloatingNav } from "@/components/ui/FloatingNav";
+import { Toaster } from "@/components/ui/toaster";
 import Image from "next/image";
 import { FaHome } from "react-icons/fa";
 
 export default function Home() {
   return (
     <main className="relative dark:bg-black bg-white flex justify-center items-center flex-col mx-auto">
+      <Toaster/>
       <div className="w-full">
-        <FloatingNav navItems={[{name: 'Home', link: '/', icon:<FaHome/>}]}/>
+        
         <Hero/>
         <TechStack/>
         <Grid/>
         <Teaching/>
-        <Contact/>
+        <Footer/>
       </div>
     </main>
   );
