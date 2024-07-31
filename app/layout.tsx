@@ -4,6 +4,8 @@ import "./globals.css";
 import { ThemeProvider } from "@/components/provider";
 import { Toaster } from "@/components/ui/toaster"
 import { FloatingNav } from "@/components/ui/FloatingNav";
+import { Footer } from "@/components/Footer";
+import Toggles from "@/components/Toggles";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -26,7 +28,7 @@ export default function RootLayout({
             disableTransitionOnChange
           >
             <Toaster/>
-            <FloatingNav navItems={[{name: 'Projects', link: '/'}, {name: 'About me', link: '/about-me'}, {name:'Resume', link: 'CV-1.pdf'}]}/>{children}</ThemeProvider></body>
+            <FloatingNav navItems={[{name: 'Projects', link: '/'}, {name: 'About me', link: '/about-me'}]}/><Toggles/>{children}<Footer/></ThemeProvider></body>
     </html>
   );
 }

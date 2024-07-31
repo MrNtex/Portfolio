@@ -10,7 +10,7 @@ const Grid = () => {
       </div>
       
       <div>
-        <div className="px-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
+        <div className="px-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 py-14">
           {gridItems.map((item) => (
             <GridItem
               key={item.id}

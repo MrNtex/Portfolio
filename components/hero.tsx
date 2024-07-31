@@ -19,13 +19,6 @@ const hero = () => {
             <Spotlight className="-top-28 -left-80 h-[80vh] w-[50vw]" fill="blue"/>
         </div>
 
-        <div className='top-0 right-0 pointer-events-auto'>
-            <div className='absolute z-20 m-6 flex gap-3'>
-                <ModeToggle/>
-                <LanguageToggle/>
-            </div>
-            
-        </div>
         <BackgroundGradientAnimation>
             
             <div className="absolute pointer-events-none my-10 z-10 inset-0 flex items-center justify-center min-h-screen">
