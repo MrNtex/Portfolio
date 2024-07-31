@@ -1,6 +1,8 @@
 
+import Contact from "@/components/Contact";
 import Grid from "@/components/Grid";
 import Hero from "@/components/hero";
+import { Teaching } from "@/components/Teaching";
 import { TechStack } from "@/components/TechStack";
 import { FloatingNav } from "@/components/ui/FloatingNav";
 import Image from "next/image";
@@ -14,6 +16,8 @@ export default function Home() {
         <Hero/>
         <TechStack/>
         <Grid/>
+        <Teaching/>
+        <Contact/>
       </div>
     </main>
   );
