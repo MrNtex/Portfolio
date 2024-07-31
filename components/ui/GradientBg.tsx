@@ -2,15 +2,23 @@
 
 import { cn } from "@/lib/utils";
 import { useEffect, useRef, useState } from "react";
+import { useTheme } from "next-themes";
 
 export const BackgroundGradientAnimation = ({
-  gradientBackgroundStart = "rgb(0, 0, 0)",
-  gradientBackgroundEnd = "rgb(0, 17, 82)",
-  firstColor = "0, 0, 0",
-  secondColor = "0, 0, 0",
-  thirdColor = "0, 0, 0",
-  fourthColor = "0, 0, 0",
-  fifthColor = "0, 0, 0",
+  gradientBackgroundStartLight = "rgb(255, 255, 255)",
+  gradientBackgroundEndLight = "rgb(240, 240, 240)",
+  gradientBackgroundStartDark = "rgb(0, 0, 0)",
+  gradientBackgroundEndDark = "rgb(0, 17, 82)",
+  firstColorLight = "255, 255, 255",
+  secondColorLight = "255, 255, 255",
+  thirdColorLight = "255, 255, 255",
+  fourthColorLight = "255, 255, 255",
+  fifthColorLight = "255, 255, 255",
+  firstColorDark = "0, 0, 0",
+  secondColorDark = "0, 0, 0",
+  thirdColorDark = "0, 0, 0",
+  fourthColorDark = "0, 0, 0",
+  fifthColorDark = "0, 0, 0",
   pointerColor = "140, 100, 255",
   size = "80%",
   blendingValue = "hard-light",
@@ -18,13 +26,20 @@ export const BackgroundGradientAnimation = ({
   className,
   containerClassName,
 }: {
-  gradientBackgroundStart?: string;
-  gradientBackgroundEnd?: string;
-  firstColor?: string;
-  secondColor?: string;
-  thirdColor?: string;
-  fourthColor?: string;
-  fifthColor?: string;
+  gradientBackgroundStartLight?: string;
+  gradientBackgroundEndLight?: string;
+  gradientBackgroundStartDark?: string;
+  gradientBackgroundEndDark?: string;
+  firstColorLight?: string;
+  secondColorLight?: string;
+  thirdColorLight?: string;
+  fourthColorLight?: string;
+  fifthColorLight?: string;
+  firstColorDark?: string;
+  secondColorDark?: string;
+  thirdColorDark?: string;
+  fourthColorDark?: string;
+  fifthColorDark?: string;
   pointerColor?: string;
   size?: string;
   blendingValue?: string;
@@ -33,30 +48,32 @@ export const BackgroundGradientAnimation = ({
   interactive?: boolean;
   containerClassName?: string;
 }) => {
+  const { theme } = useTheme();
   const interactiveRef = useRef<HTMLDivElement>(null);
 
   const [curX, setCurX] = useState(0);
   const [curY, setCurY] = useState(0);
   const [tgX, setTgX] = useState(0);
   const [tgY, setTgY] = useState(0);
+
   useEffect(() => {
     document.body.style.setProperty(
       "--gradient-background-start",
-      gradientBackgroundStart
+      theme === "light" ? gradientBackgroundStartLight : gradientBackgroundStartDark
     );
     document.body.style.setProperty(
       "--gradient-background-end",
-      gradientBackgroundEnd
+      theme === "light" ? gradientBackgroundEndLight : gradientBackgroundEndDark
     );
-    document.body.style.setProperty("--first-color", firstColor);
-    document.body.style.setProperty("--second-color", secondColor);
-    document.body.style.setProperty("--third-color", thirdColor);
-    document.body.style.setProperty("--fourth-color", fourthColor);
-    document.body.style.setProperty("--fifth-color", fifthColor);
+    document.body.style.setProperty("--first-color", theme === "light" ? firstColorLight : firstColorDark);
+    document.body.style.setProperty("--second-color", theme === "light" ? secondColorLight : secondColorDark);
+    document.body.style.setProperty("--third-color", theme === "light" ? thirdColorLight : thirdColorDark);
+    document.body.style.setProperty("--fourth-color", theme === "light" ? fourthColorLight : fourthColorDark);
+    document.body.style.setProperty("--fifth-color", theme === "light" ? fifthColorLight : fifthColorDark);
     document.body.style.setProperty("--pointer-color", pointerColor);
     document.body.style.setProperty("--size", size);
     document.body.style.setProperty("--blending-value", blendingValue);
-  }, []);
+  }, [theme]);
 
   useEffect(() => {
     function move() {
@@ -165,14 +182,14 @@ export const BackgroundGradientAnimation = ({
         ></div>
 
         <div
-            ref={interactiveRef}
-            onMouseMove={handleMouseMove}
-            className={cn(
-              `absolute [background:radial-gradient(circle_at_center,_rgba(var(--pointer-color),_0.8)_0,_rgba(var(--pointer-color),_0)_50%)_no-repeat]`,
-              `[mix-blend-mode:var(--blending-value)] w-full h-full -top-1/2 -left-1/2`,
-              `opacity-70`
-            )}
-          />
+          ref={interactiveRef}
+          onMouseMove={handleMouseMove}
+          className={cn(
+            `absolute [background:radial-gradient(circle_at_center,_rgba(var(--pointer-color),_0.8)_0,_rgba(var(--pointer-color),_0)_50%)_no-repeat]`,
+            `[mix-blend-mode:var(--blending-value)] w-full h-full -top-1/2 -left-1/2`,
+            `opacity-70`
+          )}
+        />
       </div>
     </div>
   );

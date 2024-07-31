@@ -6,8 +6,10 @@ import { FaLocationArrow } from 'react-icons/fa'
 import { TechStack } from './TechStack'
 import { FaLocationPin, FaMapLocationDot } from 'react-icons/fa6'
 import { BackgroundGradientAnimation } from './ui/GradientBg'
-import { Toggle } from "@/components/ui/toggle"
 import { ModeToggle } from './ui/DarkModeToggle'
+import Grid from './Grid'
+import { LanguageToggle } from './LangugageToggle'
+
 const hero = () => {
   return (
     <div>
@@ -18,8 +20,9 @@ const hero = () => {
         </div>
 
         <div className='top-0 right-0 pointer-events-auto'>
-            <div className='absolute z-20 m-6'>
+            <div className='absolute z-20 m-6 flex gap-3'>
                 <ModeToggle/>
+                <LanguageToggle/>
             </div>
             
         </div>
@@ -33,7 +36,7 @@ const hero = () => {
 
                     <div className='flex gap-5'>
                         <FaMapLocationDot/>
-                        <h2 className='uppercase tracking-widest text-xs text-blue-100 max-w-80'>
+                        <h2 className='uppercase tracking-widest text-xs dark:text-blue-100 max-w-80'>
                             Cracov, Poland
                         </h2>
                     </div>
@@ -55,9 +58,6 @@ const hero = () => {
 
             </div>
         </BackgroundGradientAnimation>
-        
-
-        <TechStack/>
         
     </div>
   )
