@@ -31,13 +31,13 @@ export const Footer = () => {
                     <CopyEmail />
                 </div>
                 <div className='text-md underline flex flex-col'>
-                    <a href='/resume'>Resume</a>
+                    <a onClick={() => window.open("/resume.pdf", "_blank")} className='cursor-pointer'>Resume</a>
                     <a href='https://www.linkedin.com/in/artur-niemiec/'>LinkedIn</a>
                     <a href='https://github.com/MrNtex'>GitHub</a>
                 </div>
             </div>
         </div>
-        <br/>
+        <br className='h-4'/>
         <h1 className="text-center text-sm text-gray-800 dark:text-white">© 2024 Artur Niemiec</h1>
         <br/>
     </div>

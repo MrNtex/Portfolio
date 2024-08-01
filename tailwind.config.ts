@@ -29,8 +29,8 @@ const config = {
       colors: {
         black: {
           DEFAULT: "#000",
-          100: "#000319",
-          200: "rgba(17, 25, 40, 0.75)",
+          100: "hsla(0,0%,100%,.05)",
+          200: "hsla(0,0%,100%,.04)",
           300: "rgba(255, 255, 255, 0.125)",
         },
         white: {
@@ -119,6 +119,17 @@ const config = {
             transform: "translateX(-50%) translateY(-10%)",
           },
         },
+        moveHorizontalNoY: {
+          "0%": {
+            transform: "translateX(0%)",
+          },
+          "50%": {
+            transform: "translateX(50%)",
+          },
+          "100%": {
+            transform: "translateX(0%)",
+          },
+        },
         moveInCircle: {
           "0%": {
             transform: "rotate(0deg)",
@@ -150,6 +161,7 @@ const config = {
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        moveHorizontalNoY: "moveHorizontalNoY 4s ease infinite",
         spotlight: "spotlight 2s ease .75s 1 forwards",
         shimmer: "shimmer 2s linear infinite",
         first: "moveVertical 30s ease infinite",

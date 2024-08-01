@@ -21,7 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}><ThemeProvider
+      <body className={inter.className + ' scroll-smooth'}><ThemeProvider
             attribute="class"
             defaultTheme="dark"
             enableSystem

@@ -133,7 +133,7 @@ export const Icon = ({ className, ...rest }: any) => {
   );
 };
 
-const TechStackIcon = ({
+export const TechStackIcon = ({
     title,
     icon,
   }: {
