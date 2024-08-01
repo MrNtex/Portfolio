@@ -10,7 +10,7 @@ export const navItems = [
     {
       id: 1,
       title: "<Space Game>",
-      link: "/Pojects/SpaceGame",
+      link: "/projects/SpaceGame",
       duration: "April 2024 - Present",
       description: "Work in progress...",
       className: "lg:col-span-3 lg:row-span-2 md:col-span-4 md:row-span-4",
@@ -21,7 +21,7 @@ export const navItems = [
     {
       id: 2,
       title: "Portal Chess",
-      link: "/Pojects/SpaceGame",
+      link: "/projects/PortalChess",
       duration: "September 2023 - November 2024",
       description: "Smaller chessboard, less boundries",
       className: "lg:col-span-2 md:col-span-2 md:row-span-4",
@@ -45,7 +45,7 @@ export const navItems = [
     {
       id: 4,
       title: "GravAssist",
-      link: "/Pojects/GravAssist",
+      link: "/projects/GravAssist",
       duration: "July 2022 - Octrober 2022",
       description: "Use gravity to your advantage",
       className: "lg:col-span-2 md:col-span-3 md:row-span-1",

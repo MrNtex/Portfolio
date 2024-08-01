@@ -10,7 +10,7 @@ const page = () => {
     <div className='md:flex p-12 divide-x-2 hidden'>
         <div className='w-1/3 p-12 fixed'>
           <h1 className='text-2xl font-bold'>ANI Engine</h1>
-          <p className='text-sm text-gray-500'>A game engine written in unity.</p>
+          <p className='text-sm text-gray-500'>A simple and powerful engine for creating animations.</p>
           <a href='https://github.com/MrNtex/ANIEngine' className='text-sm text-blue-500'>View on Github</a>
         </div>
         <div className='w-2/3 p-12 ml-[33%]'>
@@ -40,12 +40,6 @@ const page = () => {
                 <li>Creative Problem Solving</li>
               </ul> 
             </div>
-          </div>
-          <div className='flex gap-8 pt-36 just'>
-            <h1 className='text-2xl'>The idea</h1>
-            <p className='text-gray-400 max-w-72'>
-              ANI Engine is result of my passion for game development and Unity. I wanted to get a better understanding of how game engines work and how to create one from scratch. And test my Unity skills by creating Unity in Unity itself.
-            </p>
           </div>
           <div className='flex gap-8 pt-36 just'>
             <div>

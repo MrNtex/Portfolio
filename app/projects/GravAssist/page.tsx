@@ -9,8 +9,8 @@ const page = () => {
   return (
     <div className='md:flex p-12 divide-x-2 hidden'>
         <div className='w-1/3 p-12 fixed'>
-          <h1 className='text-2xl font-bold'>ANI Engine</h1>
-          <p className='text-sm text-gray-500'>A game engine written in unity.</p>
+          <h1 className='text-2xl font-bold'>GravAssist</h1>
+          <p className='text-sm text-gray-500'>A simple and powerful engine for creating animations.</p>
           <a href='https://github.com/MrNtex/ANIEngine' className='text-sm text-blue-500'>View on Github</a>
         </div>
         <div className='w-2/3 p-12 ml-[33%]'>
@@ -36,16 +36,23 @@ const page = () => {
               <p className='text-sm font-extralight uppercase text-gray-300'>Skills</p>
               <ul className='pl-2 pt-2 '>
                 <li>UI/UX Design</li>
-                <li>Dynamic Programming</li>
+                <li>Physics</li>
                 <li>Creative Problem Solving</li>
               </ul> 
             </div>
           </div>
           <div className='flex gap-8 pt-36 just'>
-            <h1 className='text-2xl'>The idea</h1>
-            <p className='text-gray-400 max-w-72'>
-              ANI Engine is result of my passion for game development and Unity. I wanted to get a better understanding of how game engines work and how to create one from scratch. And test my Unity skills by creating Unity in Unity itself.
-            </p>
+            <div className='w-2/3'>
+              <h1 className='text-2xl'>The idea</h1>
+              <h1 className='text-gray-400 w-10/12'>
+              <a href='https://play.google.com/store/apps/details?id=com.ArturNiemiec.GravAssist' className='font-bold text-emerald-600'>GravAssist</a> is the first game I created from start to finish. The idea came from the gravity assist mechanic used in space missions. I wanted to recreate this maneuver from the game <a href='https://store.steampowered.com/app/220200/Kerbal_Space_Program/' className='underline'>Kerbal Space Program</a>, but in a more arcade style. The player has to use the gravity of planets to navigate through the levels.
+              </h1>
+            </div>
+            
+            <div className="relative w-2/12">
+              <img src="/KSPGravAssist.jpg" alt="Gravity Assist" className='w-full h-auto rounded-lg shadow-lg object-contain absolute inset-0 transition-transform duration-300 hover:scale-110 hover:z-10'/>  
+            </div>
+            
           </div>
           <div className='flex gap-8 pt-36 just'>
             <div>

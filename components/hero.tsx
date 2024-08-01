@@ -36,7 +36,7 @@ const hero = () => {
                     
 
                     <p className='text-center text-lg mt-4 pt-3'>
-                        Next.js is a React framework that enables server-side rendering and generating static websites for React based web applications. It is a powerful tool that is used by developers to create dynamic web applications.
+                        I'm a backend developer and game developer with a passion for creating new things. I specialize in creating dynamic and interactive applications.
                     </p>
 
                     <a href='#about' className='pt-10 pointer-events-auto'> 
