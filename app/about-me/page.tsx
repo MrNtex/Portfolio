@@ -11,7 +11,7 @@ const page = () => {
             <br/>
             <p>I grew up in Bielsko-Biała, Poland. And in 2023, I moved to Cracow to study Computer Science in Engineering at <LinkPreview
             url="https://www.agh.edu.pl/"
-            className="opacity-100 font-bold bg-clip-text text-transparent bg-gradient-to-br from-purple-500 to-pink-500"
+            className="opacity-100 font-bold"
             >
             AGH University of Cracow.
             </LinkPreview>, where I use every oppurtunity to build connections and participate in events.</p>
@@ -19,7 +19,7 @@ const page = () => {
             <p>
                 I'm passionate about learning new things and I'm always looking for new challenges. I'm currently working on my <LinkPreview
             url="https://github.com/MrNtex/SpaceStrategy"
-            className="font-bold bg-clip-text text-transparent bg-gradient-to-br from-purple-500 to-pink-500"
+            className="font-bold"
             >
             new game.
             </LinkPreview>

@@ -64,7 +64,7 @@ const DraggableDiamond = () => {
     ctx.fill();
   }, [position]);
 
-  const handleDrag = (e, data) => {
+  const handleDrag = (e: {}, data: { x: number, y: number }) => {
     setPosition({ x: data.x, y: data.y });
     
     setShowTooltip(false);

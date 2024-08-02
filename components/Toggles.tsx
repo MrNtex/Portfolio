@@ -8,7 +8,7 @@ const Toggles = () => {
     <div className='top-0 right-0 pointer-events-auto'>
         <div className='absolute z-20 m-6 flex gap-3'>
             <ModeToggle/>
-            <LanguageToggle/>
+            {/*<LanguageToggle/>*/}
         </div>
         
     </div>

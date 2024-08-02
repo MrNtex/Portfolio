@@ -1,9 +1,10 @@
 "use client"
 import NodeConnector from '@/components/NodeConnector'
+import { Button } from '@/components/ui/Button'
 import { ANIEngine } from '@/data/ANIEngine'
 import { CsharpPlain, JavascriptPlain } from 'devicons-react'
 import React from 'react'
-import { FaAtom, FaBrush, FaReact, FaUnity } from 'react-icons/fa'
+import { FaArrowRight, FaAtom, FaBrush, FaReact, FaUnity } from 'react-icons/fa'
 
 const page = () => {
   return (
@@ -12,6 +13,10 @@ const page = () => {
           <h1 className='text-2xl font-bold'>Portal Chess</h1>
           <p className='text-sm text-gray-500'>A fresh take on the timeless strategy.</p>
           <a href='https://github.com/MrNtex/PortalChess' className='text-sm text-blue-500'>View on Github</a>
+          <br/>
+          <Button className='mt-2 bg-black-100' variant={'secondary'} onClick={() => window.open("https://play.google.com/store/apps/details?id=com.anindustries.PortalChess")}>
+            Play on Google Play <FaArrowRight className="ml-2 h-4 w-4" /> 
+          </Button>
         </div>
         <div className='w-2/3 p-12 ml-[33%]'>
           <div className="grid grid-cols-3 divide-x-2 justify-center">
@@ -45,28 +50,28 @@ const page = () => {
             <div className='w-2/3'>
               <h1 className='text-2xl'>The idea</h1>
               <h1 className='text-gray-400 w-10/12'>
-              <a href='https://play.google.com/store/apps/details?id=com.anindustries.PortalChess' className='font-bold text-emerald-600'>Portal Chess</a> is the first game I created from start to finish. The idea came from the gravity assist mechanic used in space missions. I wanted to recreate this maneuver from the game <a href='https://store.steampowered.com/app/220200/Kerbal_Space_Program/' className='underline'>Kerbal Space Program</a>, but in a more arcade style. The player has to use the gravity of planets to navigate through the levels.
+              Idea for <a href='https://play.google.com/store/apps/details?id=com.anindustries.PortalChess' className='font-bold text-emerald-600'>Portal Chess</a> originated in the back of my car. For some reason I decided to leave my comfort zone and try to create something outside Unity. I've choosen to use React Native and js to create a simple chess game with a twist. The twist was to add portals to the game. The player can use the portals to teleport the pieces from one edge to antoher.
               </h1>
             </div>
             
             <div className="relative w-2/12">
-              <img src="/PortalChess1.jpg" alt="Portal Chess" className='w-full h-auto rounded-lg shadow-lg object-contain absolute inset-0 transition-transform duration-300 hover:scale-110 hover:z-10'/>  
+              <img src="/PortalChessCar.jpg" alt="Portal Chess" className='w-full h-auto rounded-lg shadow-lg object-contain absolute inset-0 transition-transform duration-300 hover:scale-110 hover:z-10'/>  
             </div>
             
           </div>
 
           <div className='flex gap-8 pt-36 justify-start h-[40rem]'>
             <div className="relative w-3/12 h-64">
-                <img src="/GravAssistGravity.jpg" alt="ANI Engine" className='w-full max-h-96 rounded-lg shadow-lg object-contain absolute inset-0 transition-transform duration-300 hover:scale-110 hover:z-10'/>
+                <img src="/PortalChess1.jpg" alt="Portal Chess" className='w-full max-h-96 rounded-lg shadow-lg object-contain absolute inset-0 transition-transform duration-300 hover:scale-110 hover:z-10'/>
             </div>
             <div className="w-6/12">
                 <h1 className='text-2xl'>Implementation</h1>
                 <p className='text-gray-400'>
-                    I decided to create my own physics engine to calculate the forces between objects <a className='italic'>(because I didn't know about the existance of built into Unity point-effector)</a>. The player can use the gravity of planets to navigate through the levels. The game is written in C# and uses Unity's physics engine to calculate the forces and collisions between objects.
+                    Portal Chess has fully funtional chess game mechanics. The player can move the pieces, capture the enemy pieces and use the portals to teleport the pieces from one edge to another. Game automatically detects check and checkmate. In the future I plan to add more features like multiplayer and AI.
                 </p>
                 <h1 className='text-2xl'>Challanges</h1>
                 <p className='text-gray-400'>
-                    The biggest challange was contantly having to refactor the code to make it more readable and maintainable. It was my first big game and as I was constantly learning new things, I had to go back and rewrite the code to make it more maintainable.
+                  The biggest challenge was constantly refactoring the code to enhance readability and maintainability. As this was my first major project in React Native, I was continuously learning and adapting. This meant frequently revisiting and rewriting sections of the code to implement best practices and ensure long-term maintainability. Additionally, integrating the teleportation mechanic required careful handling of state and board logic to ensure smooth and accurate gameplay.
                 </p>
             </div>
             <div className="w-3/12">
@@ -76,35 +81,19 @@ const page = () => {
           
 
           <hr className='h-4'/>
-          <div>
-            <div className='flex gap-3'>
-            <FaAtom size='2rem' color='white'/>
-            <h1 className='text-2xl'>Physics</h1>
-            </div>
-            
-            <p className='text-gray-400 font-extralight pt-2'>
-              ANI Engine uses a simplified version of Unity's physics engine. Automatically calculating the forces and collisions between objects.
-            </p>
-          </div>
-          <img className='py-2' src="/ANIEnginePhysics.png"/>
 
-          <hr className='h-4'/>
-          <div>
-            <div className='flex gap-3'>
-            <FaBrush size='2rem' color='white'/>
-            <h1 className='text-2xl'>Customization</h1>
+          <div className="relative flex items-center p-4 gap-3 pb-12">
+            <div className="relative w-3/12 h-64">
+                <img src="/PortalChess1.jpg" alt="ANI Engine" className='w-full max-h-96 rounded-lg object-contain absolute inset-0 transition-transform duration-300 hover:scale-110 hover:z-10'/>
             </div>
-            
-            <p className='text-gray-400 font-extralight pt-2'>
-              ANI Engine uses a simplified version of Unity's physics engine. Automatically calculating the forces and collisions between objects.
-            </p>
-          </div>
-          <div className="relative flex items-center p-4 gap-3">
-            <div className="relative w-5/12 h-48">
-                <img className="absolute inset-0 w-full h-full object-cover transition-transform duration-300 hover:scale-110 hover:z-10" src="/ANIEngineCust.png"/>
+            <div className="relative w-3/12 h-64">
+                <img src="/PortalChess2.jpg" alt="ANI Engine" className='w-full max-h-96 rounded-lg object-contain absolute inset-0 transition-transform duration-300 hover:scale-110 hover:z-10'/>
             </div>
-            <div className="relative w-5/12 h-48">
-                <img className="absolute inset-0 w-full h-full object-cover transition-transform duration-300 hover:scale-110 hover:z-10" src="/ANIEngineNodes.png"/>
+            <div className="relative w-3/12 h-64">
+                <img src="/PortalChess3.jpg" alt="ANI Engine" className='w-full max-h-96 rounded-lg object-contain absolute inset-0 transition-transform duration-300 hover:scale-110 hover:z-10'/>
+            </div>
+            <div className="relative w-3/12 h-64">
+                <img src="/PortalChess4.jpg" alt="ANI Engine" className='w-full max-h-96 rounded-lg object-contain absolute inset-0 transition-transform duration-300 hover:scale-110 hover:z-10'/>
             </div>
           </div>
 
