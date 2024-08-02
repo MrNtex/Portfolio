@@ -5,7 +5,9 @@ const nextConfig = {
       "api.microlink.io", // Microlink Image Preview
     ],
   },
-  output: 'export',
+  reactStrictMode: true,
+  distDir: "build",
+  output: "export",
 };
 
 export default nextConfig;

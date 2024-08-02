@@ -15,6 +15,7 @@ const config = {
     "./app/**/*.{ts,tsx}",
     "./src/**/*.{ts,tsx}",
     "./data/**/*.{ts,tsx}",
+    "./src/**/*.{html,js}",
   ],
   prefix: "",
   theme: {
