@@ -30,7 +30,7 @@ const hero = () => {
                     <div className='flex gap-5'>
                         <FaMapLocationDot/>
                         <h2 className='uppercase tracking-widest text-xs dark:text-blue-100 max-w-80'>
-                            Cracov, Poland
+                            Cracow, Poland
                         </h2>
                     </div>
                     
