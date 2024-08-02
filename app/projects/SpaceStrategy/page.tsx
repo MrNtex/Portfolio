@@ -68,7 +68,7 @@ const page = () => {
             </div>
             
             <p className='text-gray-400 font-extralight pt-2'>
-              ANI Engine uses a simplified version of Unity's physics engine. Automatically calculating the forces and collisions between objects.
+              ANI Engine uses a simplified version of Unity&apos;s physics engine. Automatically calculating the forces and collisions between objects.
             </p>
           </div>
           <img className='py-2' src="/ANIEnginePhysics.png"/>
@@ -81,7 +81,7 @@ const page = () => {
             </div>
             
             <p className='text-gray-400 font-extralight pt-2'>
-              ANI Engine uses a simplified version of Unity's physics engine. Automatically calculating the forces and collisions between objects.
+              ANI Engine uses a simplified version of Unity&apos;s physics engine. Automatically calculating the forces and collisions between objects.
             </p>
           </div>
           <div className="relative flex items-center p-4 gap-3">

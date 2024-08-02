@@ -50,7 +50,7 @@ const page = () => {
             <div className='w-2/3'>
               <h1 className='text-2xl'>The idea</h1>
               <h1 className='text-gray-400 w-10/12'>
-              Idea for <a href='https://play.google.com/store/apps/details?id=com.anindustries.PortalChess' className='font-bold text-emerald-600'>Portal Chess</a> originated in the back of my car. For some reason I decided to leave my comfort zone and try to create something outside Unity. I've choosen to use React Native and js to create a simple chess game with a twist. The twist was to add portals to the game. The player can use the portals to teleport the pieces from one edge to antoher.
+              Idea for <a href='https://play.google.com/store/apps/details?id=com.anindustries.PortalChess' className='font-bold text-emerald-600'>Portal Chess</a> originated in the back of my car. For some reason I decided to leave my comfort zone and try to create something outside Unity. I&apos;ve choosen to use React Native and js to create a simple chess game with a twist. The twist was to add portals to the game. The player can use the portals to teleport the pieces from one edge to antoher.
               </h1>
             </div>
             

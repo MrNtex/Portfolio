@@ -36,7 +36,7 @@ const hero = () => {
                     
 
                     <p className='text-center text-lg mt-4 pt-3'>
-                        I'm a backend developer and game developer with a passion for creating new things. I specialize in creating dynamic and interactive applications.
+                        I&apos;m a backend developer and game developer with a passion for creating new things. I specialize in creating dynamic and interactive applications.
                     </p>
 
                     <a href='#about' className='pt-10 pointer-events-auto'> 

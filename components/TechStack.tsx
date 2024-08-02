@@ -12,10 +12,10 @@ export function TechStack() {
       <div className="py-20 flex flex-col lg:flex-row items-center justify-center w-full gap-4 mx-auto px-8">
         <Card title="Backend" icon={<DotNetPlain />}
         stack={[
-          <TechStackIcon title=".NET" icon={<DotnetcorePlain color="white"/>}/>,
-          <TechStackIcon title="SQL" icon={<FaDatabase color="white"/>}/>,
-          <TechStackIcon title="C#" icon={<CsharpPlain color="white"/>}/>,
-          <TechStackIcon title="XML" icon={<XmlPlain color="white"/>}/>,
+          <TechStackIcon key={1} title=".NET" icon={<DotnetcorePlain color="white"/>}/>,
+          <TechStackIcon key={2} title="SQL" icon={<FaDatabase color="white"/>}/>,
+          <TechStackIcon key={3} title="C#" icon={<CsharpPlain color="white"/>}/>,
+          <TechStackIcon key={4} title="XML" icon={<XmlPlain color="white"/>}/>,
       ]}>
           <CanvasRevealEffect
             animationSpeed={5}
@@ -31,8 +31,8 @@ export function TechStack() {
         </Card>
         <Card title="GameDev" icon={<FaUnity />}
         stack={[
-            <TechStackIcon title="Unity" icon={<FaUnity/>}/>,
-            <TechStackIcon title="C#" icon={<CsharpPlain color="white"/>}/>,
+            <TechStackIcon key={1} title="Unity" icon={<FaUnity/>}/>,
+            <TechStackIcon key={2} title="C#" icon={<CsharpPlain color="white"/>}/>,
         ]}
         >
           <CanvasRevealEffect
@@ -45,11 +45,11 @@ export function TechStack() {
         </Card>
         <Card title="Systems and Embedded" icon={<FaWhmcs />}
         stack={[
-          <TechStackIcon title="C" icon={<CPlain color="white"/>}/>,
-          <TechStackIcon title="C++" icon={<CplusplusPlain color="white"/>}/>,
-          <TechStackIcon title="Raspberry Pi" icon={<RaspberrypiPlain color="white"/>}/>,
-          <TechStackIcon title="Arduino" icon={<ArduinoPlain color="white"/>}/>,
-          <TechStackIcon title="Assembly" icon={<FaCode color="white"/>}/>,
+          <TechStackIcon key={1} title="C" icon={<CPlain color="white"/>}/>,
+          <TechStackIcon key={2} title="C++" icon={<CplusplusPlain color="white"/>}/>,
+          <TechStackIcon key={3} title="Raspberry Pi" icon={<RaspberrypiPlain color="white"/>}/>,
+          <TechStackIcon key={4} title="Arduino" icon={<ArduinoPlain color="white"/>}/>,
+          <TechStackIcon key={5} title="Assembly" icon={<FaCode color="white"/>}/>,
         ]}
         >
           <CanvasRevealEffect

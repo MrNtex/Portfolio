@@ -63,7 +63,7 @@ const page = () => {
             <div className="w-6/12">
                 <h1 className='text-2xl'>Implementation</h1>
                 <p className='text-gray-400'>
-                    I decided to create my own physics engine to calculate the forces between objects <a className='italic'>(because I didn't know about the existance of built into Unity point-effector)</a>. The player can use the gravity of planets to navigate through the levels. The game is written in C# and uses Unity's physics engine to calculate the forces and collisions between objects.
+                    I decided to create my own physics engine to calculate the forces between objects <a className='italic'>(because I didn&apos;t know about the existance of built into Unity point-effector)</a>. The player can use the gravity of planets to navigate through the levels. The game is written in C# and uses Unity&apos;s physics engine to calculate the forces and collisions between objects.
                 </p>
                 <h1 className='text-2xl'>Challanges</h1>
                 <p className='text-gray-400'>
@@ -84,7 +84,7 @@ const page = () => {
             </div>
             
             <p className='text-gray-400 font-extralight py-2'>
-              GravAssist utilizes Newton's law of universal gravitation to calculate the forces between objects. The player can use the gravity of planets to navigate through the levels. You can see the heavly simplified demo below.
+              GravAssist utilizes Newton&apos;s law of universal gravitation to calculate the forces between objects. The player can use the gravity of planets to navigate through the levels. You can see the heavly simplified demo below.
             </p>
 
             <div>
@@ -99,7 +99,7 @@ const page = () => {
             </div>
             
             <p className='text-gray-400 font-extralight py-2'>
-              GravAssist utilizes Newton's law of universal gravitation to calculate the forces between objects. The player can use the gravity of planets to navigate through the levels.
+              GravAssist utilizes Newton&apos;s law of universal gravitation to calculate the forces between objects. The player can use the gravity of planets to navigate through the levels.
             </p>
             <p className='text-blue-500 font-extralight py-2'>
               Switch to desktop to see the demo.
@@ -115,7 +115,7 @@ const page = () => {
               </div>
               
               <p className='text-gray-400 font-extralight pt-2 w-1/2'>
-                GravAssist isn't just about gravity. The game features a variety of levels with different mechanics. The player can grab moons and move them on their orbits, use black and white holes to slingshot themselves and avoid asteroids. Or jump through portals.
+                GravAssist isn&apos;t just about gravity. The game features a variety of levels with different mechanics. The player can grab moons and move them on their orbits, use black and white holes to slingshot themselves and avoid asteroids. Or jump through portals.
               </p>
             </div>
             

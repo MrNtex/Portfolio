@@ -22,10 +22,12 @@ const DraggableDiamond = () => {
   );
 
   useEffect(() => {
-    const canvas = canvasRef.current;
+    const canvas = canvasRef.current as HTMLCanvasElement | null;
+    if(!canvas) return;
     const ctx = canvas.getContext('2d');
+    if(!ctx) return;
     ctx.clearRect(0, 0, canvas.width, canvas.height);
-
+    
     let result = { x: 0, y: 0 };
 
 
