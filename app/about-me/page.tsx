@@ -30,7 +30,7 @@ const page = () => {
             In my free time I run a youtube chanell called <LinkPreview url="https://www.youtube.com/channel/UCZrepsiS3gGsb1ObK1e8CeA" className="font-bold">CodeForge</LinkPreview> where I post tutorials and devlogs for <LinkPreview url="https://play.google.com/store/apps/developer?id=Niemiec+Artur+Industries" className="font-bold">my games</LinkPreview>
             </p>
             <p>
-            Besides that I'm a coding trainer for <LinkPreview url="https://www.codinggiants.com/" className="font-bold bg-clip-text text-transparent bg-gradient-to-br from-purple-500 to-pink-500">Coding Gigants</LinkPreview>
+            Besides that I'm a programming trainer for <LinkPreview url="https://www.codinggiants.com/" className="font-bold bg-clip-text text-transparent bg-gradient-to-br from-purple-500 to-pink-500">Coding Gigants</LinkPreview>
             </p>
             </div>
             <img src="InfoPhoto.jpg" alt="Artur Niemiec" className='w-1/3 h-auto rounded-lg shadow-lg hidden lg:block md:block object-contain'/>
