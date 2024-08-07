@@ -11,7 +11,7 @@ const page = () => {
     <div className='md:flex p-12 divide-x-2 hidden'>
         <div className='w-1/3 p-12 fixed'>
           <h1 className='text-2xl font-bold'>GravAssist</h1>
-          <p className='text-sm text-gray-500'>A simple and powerful engine for creating animations.</p>
+          <p className='text-sm text-gray-500'>Use gravity to your advantage</p>
           <a href='https://play.google.com/store/apps/details?id=com.ArturNiemiec.GravAssist' className='text-sm text-blue-500'>View on GooglePlay</a>
         </div>
         <div className='w-2/3 p-12 ml-[33%]'>

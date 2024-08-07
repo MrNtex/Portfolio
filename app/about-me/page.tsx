@@ -27,7 +27,7 @@ const page = () => {
             </p>
             <br/>
             <p>
-            In my free time I run a youtube chanell called <LinkPreview url="https://www.youtube.com/channel/UCZrepsiS3gGsb1ObK1e8CeA" className="font-bold">CodeForge</LinkPreview> where I post tutorials and devlogs for <LinkPreview url="https://play.google.com/store/apps/developer?id=Niemiec+Artur+Industries" className="font-bold">my games</LinkPreview>
+            In my free time I run a youtube channel called <LinkPreview url="https://www.youtube.com/channel/UCZrepsiS3gGsb1ObK1e8CeA" className="font-bold">CodeForge</LinkPreview> where I post tutorials and devlogs for <LinkPreview url="https://play.google.com/store/apps/developer?id=Niemiec+Artur+Industries" className="font-bold">my games</LinkPreview>
             </p>
             <p>
             Besides that I&apos;m a programming trainer for <LinkPreview url="https://www.codinggiants.com/" className="font-bold bg-clip-text text-transparent bg-gradient-to-br from-purple-500 to-pink-500">Coding Gigants</LinkPreview>
