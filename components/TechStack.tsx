@@ -27,7 +27,7 @@ export function TechStack() {
             dotSize={2}
           />
           {/* Radial gradient for the cute fade */}
-          <div className="absolute inset-0 [mask-image:radial-gradient(400px_at_center,white,transparent)] bg-black/50 dark:bg-black/90" />
+          <div className="hidden dark:block absolute inset-0 [mask-image:radial-gradient(400px_at_center,white,transparent)] bg-black/50 dark:bg-black/90" />
         </Card>
         <Card title="GameDev" icon={<FaUnity />}
         stack={[
@@ -41,7 +41,7 @@ export function TechStack() {
             dotSize={2}
           />
           {/* Radial gradient for the cute fade */}
-          <div className="absolute inset-0 [mask-image:radial-gradient(400px_at_center,white,transparent)] bg-black/50 dark:bg-black/90" />
+          <div className="hidden dark:block absolute inset-0 [mask-image:radial-gradient(400px_at_center,white,transparent)] bg-black/50 dark:bg-black/90" />
         </Card>
         <Card title="Systems and Embedded" icon={<FaWhmcs />}
         stack={[
@@ -59,7 +59,7 @@ export function TechStack() {
             dotSize={2}
           />
           {/* Radial gradient for the cute fade */}
-          <div className="absolute inset-0 [mask-image:radial-gradient(400px_at_center,white,transparent)] bg-black/50 dark:bg-black/90" />
+          <div className="hidden dark:block absolute inset-0 [mask-image:radial-gradient(400px_at_center,white,transparent)] bg-black/50 dark:bg-black/90" />
         </Card>
       </div>
     </>
@@ -101,7 +101,7 @@ const Card = ({
         )}
       </AnimatePresence>
 
-      <div className="z-20 w-full relative bg-black h-full">
+      <div className="z-20 w-full relative dark:bg-black bg-white-100 h-full">
         <div className="absolute text-center group-hover/canvas-card:-translate-y-4 group-hover/canvas-card:opacity-0 transition duration-200 w-full h-full flex items-center justify-center">
             <h2 className="dark:text-white text-xl font-bold text-black">
                 {title}
